@@ -8,14 +8,15 @@
 </head>
 <body>
     <script>
-        
+    function game() { 
         let computerChoice = computerPlay()
         let playerChoice = prompt("Choose rock, paper or scissors").toLowerCase().trim()
         let outcome = ""
+    
         function computerPlay() {
             return Math.floor(Math.random() * 3)+ 1
         }
-        console.log(playRound(computerChoice,playerChoice))
+      
         function playRound (computerChoice, playerChoice) {
         
         if (playerChoice === "rock") {
@@ -40,8 +41,8 @@
         }
         
         if (computerChoice === playerChoice) {
-            console.log("you tied")
-            outcome = "tied"
+            
+            outcome = "you tied"
         } 
         if (
             playerChoice === 1 && computerChoice === 2 ||
@@ -56,8 +57,15 @@
         ) 
         {outcome = "you win"}
     return outcome  
+    
     }
-        
-        </script>
+    console.log(playRound(computerChoice,playerChoice))    
+      }
+    for (let i = 1; i <= 5; i++) {
+        game()
+    }
+     
+    
+    </script>
 </body>
 </html>
