@@ -7,3 +7,29 @@ body {
     
     
 }
+.title {
+    margin: auto;
+    width: 50vw;
+    border: 10px double cyan;
+    border-radius: 30px;
+    background: rgb(178, 199, 199);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 0px 0px 20px rgb(231, 63, 12);
+}
+.butContainer {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border: 5px dotted cyan;
+    padding: 10px;
+}
+.cButton {
+    border-radius: 50%;
+}

@@ -1,3 +1,32 @@
+const container = document.querySelector("#container");
+const content = document.createElement("div");
+const title = document.createElement("p");
+const butConatainer = document.createElement("div");
+
+
+const rockB = document.createElement('button');
+const paperB = document.createElement('button');
+const scissorsB = document.createElement('button');
+
+butConatainer.classList.add("butContainer");
+title.classList.add("title");
+content.classList.add("content");
+rockB.classList.add("cButton");
+paperB.classList.add("cButton");
+scissorsB.classList.add("cButton");
+
+title.textContent = "ROCK PAPER SCISSORS";
+rockB.textContent = "ROCK";
+paperB.textContent = "PAPER";
+scissorsB.textContent = "SCISSORS";
+
+container.appendChild(content);
+content.appendChild(title);
+content.appendChild(butConatainer);
+butConatainer.appendChild(rockB);
+butConatainer.appendChild(paperB);
+butConatainer.appendChild(scissorsB);
+
 function game() { 
     let computerChoice = computerPlay()
     let playerChoice = prompt("Choose rock, paper or scissors").toLowerCase().trim()
