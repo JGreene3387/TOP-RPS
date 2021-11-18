@@ -25,11 +25,57 @@ body {
 .butContainer {
     width: 60vw;
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-    border: 5px dotted cyan;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px dotted rgb(178, 204, 30);
     padding: 10px;
+    border-radius: 30%;
 }
 .cButton {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex: 1 0;
+    font-weight: 900;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    padding: 5px;
+    color: red;
+    margin: 20px;
+    border: 2px solid gold;
+}
+.scoreBoard {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid gold;
+    padding: 2px;
+    justify-content: space-between;
+}
+.compSide, .playerSide {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid purple;
+    padding: 5px;
+
+} 
+
+.bigName {
+    display: flex;
+    align-items: center;
+    border: 2px solid green;
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(178, 204, 30);
+    margin: 10px;
+}
+.bigScore {
+    display: flex;
+    border: 2px dashed red;
+    border-radius: 20%;
+    font-size: 50px;
+    align-items: center;
+    color: rgb(54, 175, 54);
+    padding: 10px;
 }
